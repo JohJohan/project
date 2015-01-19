@@ -4,6 +4,5 @@
 	</head>
 
 	<body>
-		@include('includes.core.error')
 	</body>
 </html>
