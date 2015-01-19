@@ -1,0 +1,40 @@
+body {
+  padding-top: 90px;
+}
+
+nav a {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  font-size: 18px;
+}
+
+nav .navbar-toggle {
+  margin: 13px 15px 13px 0;
+}
+
+.navbar-brand {
+  font-size: 50px;
+}
+
+nav.navbar {
+  min-height: 100px;
+}
+
+nav.navbar.shrink {
+  min-height: 50px;
+}
+
+nav.shrink a {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 15px;
+}
+
+nav.shrink .navbar-brand {
+  font-size: 35px;
+}
+
+nav.shrink .navbar-toggle {
+  padding: 4px 5px;
+  margin: 8px 15px 8px 0;
+}
