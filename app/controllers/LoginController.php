@@ -21,10 +21,10 @@ class LoginController extends BaseController {
 			//
 			if (Auth::attempt(array('gebruikersnaam' => Input::get('gebruikersnaam'), 'wachtwoord' => Input::get('wachtwoord')))){
 				//
-				return Redirect::route('hello');
+				return Redirect::intended('hello');
 			} else {
 				//
-				return Redirect::route('hello')->withErrors('Onjuist naam of wachtwoord');
+				return Redirect::intended('hello')->withErrors('Onjuist naam of wachtwoord', 'login');
 			}
 		}
 	}
