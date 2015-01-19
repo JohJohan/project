@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">De website</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -27,10 +27,10 @@
                     <li class="dropdown" id="menuLogin">
                         <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
                         <div class="dropdown-menu" style="padding:17px;">
-                            <form class="form" id="formLogin"> 
-                                <input name="gebruikersnaam" type="text" placeholder="gebruikersnaam"> 
-                                <input name="wachtwoord"  type="password" placeholder="wachtwoord"><br>
-                                <button type="button" id="btnLogin" class="btn">Login</button>
+                            <form method="POST" action={{ URL::to('/login') }}>
+                            <input type="text" name="gebruikersnaam">
+                            <input type="password" name="wachtwoord">
+                            <input type="submit" value="Log in">
                             </form>
                       </div>
                     </li>
