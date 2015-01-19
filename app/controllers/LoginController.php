@@ -19,13 +19,16 @@ class LoginController extends BaseController {
 		//
 		if (Input::has('gebruikersnaam') && Input::has('wachtwoord')){
 			//
-			if (Auth::attempt(array('gebruikersnaam' => Input::get('gebruikersnaam'), 'wachtwoord' => Input::get('wachtwoord')))){
+			if (Auth::attempt(array('username' => Input::get('gebruikersnaam'), 'password' => Input::get('wachtwoord')))){
 				//
-				return Redirect::intended('hello');
+				return Redirect::intended('/');
 			} else {
 				//
-				return Redirect::intended('hello')->withErrors('Onjuist naam of wachtwoord', 'login');
+				return Redirect::intended('/')->withErrors('Onjuist naam of wachtwoord');
 			}
+		} else {
+			//
+			return Redirect::intended('/')->withErrors('Geen naam en/of wachtwoord ingevult');
 		}
 	}
 
@@ -34,7 +37,7 @@ class LoginController extends BaseController {
 		if (Auth::check()){
 			//
 			Auth::logout();
-			return Redirect::intended('hello');
+			return Redirect::intended('/');
 		}
 	}
 }

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 19, 2015 at 02:16 PM
+-- Generation Time: Jan 19, 2015 at 03:57 PM
 -- Server version: 5.6.11
 -- PHP Version: 5.5.1
 
@@ -25,16 +25,23 @@ USE `project`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `gebruikers`
+-- Table structure for table `users`
 --
 
-CREATE TABLE IF NOT EXISTS `gebruikers` (
+CREATE TABLE IF NOT EXISTS `users` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `gebruikersnaam` varchar(255) NOT NULL,
-  `wachtwoord` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `emailaddress` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`ID`, `username`, `password`, `emailaddress`) VALUES
+(1, 'admin', 'admin', 'admin@localhost.nl');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
