@@ -22,6 +22,11 @@ class RegisterController extends BaseController {
 		if ($validator->fails()){
 			//
 			Redirect::to('/register')->withErrors($validator);
+		} else {
+			//
+			DB::insert('insert into users (username, password, emailaddress, role) values (?,?,?,?);',
+				array($username, $password, $emailaddress, $role));
+			Redirect::to('/')->withErrors("Uw account is aangemaakt!");
 		}
 	}
 }

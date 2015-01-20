@@ -20,4 +20,9 @@ Route::get('/test', function(){
 	return View::make('test');
 });
 
+Route::get('/admin', array('before' => 'auth', function(){
+	return View::make('admin.home');
+}));
+
 Route::post('/login', 'LoginController@login');
+Route::get('/logout', 'LoginController@logout');
