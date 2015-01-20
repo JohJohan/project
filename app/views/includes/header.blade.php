@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="index"> {{Config::get('app.sitenaam');}}</a>
+                <a class="navbar-brand page-scroll" href={{ URL::to('/') }}> {{Config::get('app.sitenaam');}}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
