@@ -27,10 +27,18 @@
                     <li class="dropdown" id="menuLogin">
                         <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
                         <div class="dropdown-menu" style="padding:17px;">
-                            <form method="POST" action={{ URL::to('/login') }}>
-                            <input type="text" name="gebruikersnaam">
-                            <input type="password" name="wachtwoord">
-                            <input type="submit" value="Log in">
+                            <form  method="POST" action={{ URL::to('/login') }} class="awesome-form">
+                                <div class="input-group">
+                                    <input type="text" name="gebruikersnaam">
+                                    <label>Gebruikersnaam</label>
+                                </div>
+                            
+                                <div class="input-group">
+                                    <input type="password" name="wachtwoord">
+                                    <label>Wachtwoord</label>
+                                </div>
+                            
+                                <input type="submit" value="Log in">
                             </form>
                       </div>
                     </li>

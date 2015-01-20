@@ -46,7 +46,7 @@
     <script src="assest/js/bootstrap.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="assest/js/main.js"></script>
+     <script src="assest/js/main.js"></script>
 
 
 </body>
