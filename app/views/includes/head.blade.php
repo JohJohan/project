@@ -13,7 +13,10 @@
 
 
     <!-- Custom CSS -->
-    <link href="assest/css/main.css" rel="stylesheet">
+    <link href="assest/css/main.css" rel="stylesheet"  media=" (min-device-width: 767px) , (min-width: 767px)">
+
+    <!-- Phone CSS -->
+    <link href="assest/css/phone/main.css" rel="stylesheet" media=" (max-device-width: 767px) , (max-width: 767px;) ">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->

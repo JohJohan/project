@@ -1,40 +1,54 @@
+/* Navbar */
 body {
-  padding-top: 90px;
+  padding-top: 150px;
 }
 
-nav a {
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-  font-size: 18px;
+nav {
+    background: rgba(0, 23, 32, 0.75)!important;
 }
-
-nav .navbar-toggle {
-  margin: 13px 15px 13px 0;
+.navbar {
+  height: 150px;
 }
-
+.container{
+  height: 150px;
+}
 .navbar-brand {
-  font-size: 50px;
+  font-size: 80px;
+  padding: 30px 10px;
 }
-
-nav.navbar {
-  min-height: 100px;
+.navbar .container ul {
+  height: 150px;
 }
-
+.navbar .container li {
+  height: 150px;
+}
+.navbar .container a {
+  height: 150px;
+}
+.navbar .container ul a {
+  padding: 40px 30px;
+}
+/* Shrink */
 nav.navbar.shrink {
-  min-height: 50px;
+  background: rgba(0, 23, 32, 0.9)!important;
+    height: 50px;
 }
-
-nav.shrink a {
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-  font-size: 15px;
+.shrink .container{
+  height: 50px;
 }
-
-nav.shrink .navbar-brand {
-  font-size: 35px;
+.shrink .navbar-brand {
+  font-size: 40px;
+  padding: 10px 15px;
 }
-
-nav.shrink .navbar-toggle {
-  padding: 4px 5px;
-  margin: 8px 15px 8px 0;
+.shrink .container ul {
+  height: 50px;
+}
+.shrink .container li {
+  height: 50px;
+}
+.shrink .container a {
+  height: 50px;
+}
+.shrink .container ul a {
+  padding: 10px 15px;
 }
