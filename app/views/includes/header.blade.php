@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">De website</a>
+                <a class="navbar-brand page-scroll" href="index"> {{Config::get('app.sitenaam');}}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -19,10 +19,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">part 1</a>
+                        <p>U bent nu ingelogd als {{Auth::user()}} </p>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">part 2</a>
+                        <a class="page-scroll" href="pagina2">part 1</a>
                     </li>
                     <li class="dropdown" id="menuLogin">
                         <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
