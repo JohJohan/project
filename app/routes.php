@@ -22,9 +22,6 @@ Route::get('/pagina2', function(){
 });
 
 
-Route::get('/admin', array('before' => 'auth', function(){
-	return View::make('admin.home');
-}));
-
+Route::get('/admin', 'AdminController@AdminCheck');
 Route::post('/login', 'LoginController@login');
 Route::get('/logout', 'LoginController@logout');

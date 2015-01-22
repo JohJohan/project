@@ -4,5 +4,6 @@
 	</head>
 
 	<body>
+	{{ Auth::user() }}
 	</body>
 </html>

@@ -19,15 +19,22 @@ class LoginController extends BaseController {
 		//
 		if (Input::has('gebruikersnaam') && Input::has('wachtwoord')){
 			//
-			if (Auth::attempt(array('username' => Input::get('gebruikersnaam'), 'password' => Input::get('wachtwoord')))){
+			$credentials = array(
+					'emailaddress' => Input::get('gebruikersnaam'),
+					'password' => Input::get('wachtwoord')
+				);
+			if (Auth::attempt($credentials)){
 				//
+				//echo 'Login success!<br>';
 				return Redirect::intended('/');
 			} else {
 				//
+				//echo 'Login failed!<br>';
 				return Redirect::intended('/')->withErrors('Onjuist naam of wachtwoord');
 			}
 		} else {
 			//
+			//echo 'I/O error<br>';
 			return Redirect::intended('/')->withErrors('Geen naam en/of wachtwoord ingevult');
 		}
 	}
