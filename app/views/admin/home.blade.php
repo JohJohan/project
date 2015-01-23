@@ -46,5 +46,11 @@
 				</a>
 			</div>
 		</div>
+
+		<div id="content">
+			@if (Input::has('action'))
+				@include('admin.action.'.Input::get('action'))
+			@endif
+		</div>
 	</body>
 </html>

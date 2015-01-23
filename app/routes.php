@@ -23,5 +23,6 @@ Route::get('/pagina2', function(){
 
 
 Route::get('/admin', 'AdminController@AdminCheck');
+Route::any('/admin/ban', 'AdminController@AdminBan');
 Route::post('/login', 'LoginController@login');
 Route::get('/logout', 'LoginController@logout');
