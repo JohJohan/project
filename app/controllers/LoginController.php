@@ -20,7 +20,7 @@ class LoginController extends BaseController {
 		if (Input::has('gebruikersnaam') && Input::has('wachtwoord')){
 			//
 			$credentials = array(
-					'emailaddress' => Input::get('gebruikersnaam'),
+					'username' => Input::get('gebruikersnaam'),
 					'password' => Input::get('wachtwoord')
 				);
 			if (Auth::attempt($credentials)){

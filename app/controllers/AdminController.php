@@ -1,18 +1,14 @@
 <?php
+session_start();
 
 class AdminController extends BaseController {
 
 	/*
-	text
+		Controller voor de admin panels.
 	*/
 
 	public function AdminCheck(){
 		//
-		if (Auth::check()){
-			//
-		} else {
-			//
-			return Redirect::to('/');
-		}
+		
 	}
 }
