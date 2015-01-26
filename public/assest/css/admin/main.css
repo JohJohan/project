@@ -1,0 +1,29 @@
+body {
+	margin: 				0;
+}
+
+#navbar {
+	background-color: 	#F00;
+	width: 				180px;
+	float: 				left;
+}
+
+#navbar .button {
+	background-color: 	#0F0;
+	min-height: 		25px;
+	text-align:  		center;
+}
+
+#navbar .button .sub-button {
+	display: 			none;
+	background-color: 	#0FF;
+	min-height: 		25px;
+}
+
+#navbar .button .sub-button:hover {
+	background-color: 	#0FF;
+}
+
+#content {
+	padding-left: 		200px;
+}
